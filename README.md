@@ -112,10 +112,7 @@ A visual overview of the app interface:
   <img src="assets/showcase/profile.png" width="220">
 </p>
 
-## 🧾 License
 
-This project is licensed under the **MIT License**.  
-See the [LICENSE](LICENSE.md) file for full license details.
 
 ## 🙏 Acknowledgements
 
