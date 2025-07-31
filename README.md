@@ -1,20 +1,22 @@
+Sure! Here's the complete `README.md` content written in a clean, professional, and classic format—all in one go so you can copy and paste it directly:
 
 ---
 
 ```markdown
 # 🦋 DraftWing
 
-**DraftWing** is an intelligent, agentic mobile application built with the power of [Flutter](https://flutter.dev) and driven by [Vertex AI](https://cloud.google.com/vertex-ai). Designed for creators, developers, and bloggers, DraftWing enables effortless generation of well-structured article drafts which you can preview, validate, and publish on platforms like [Medium](https://medium.com), [Dev.to](https://dev.to), or any other markdown-compatible publishing tool.
+**DraftWing** is an intelligent, agentic mobile application built using [Flutter](https://flutter.dev) and powered by [Vertex AI](https://cloud.google.com/vertex-ai). Designed for developers, writers, and bloggers, DraftWing helps you generate AI-powered drafts that you can validate and publish on platforms like [Medium](https://medium.com), [Dev.to](https://dev.to), or any markdown-supported platform.
 
 ---
 
-## ✨ Why "DraftWing"?
+## ✨ Name Inspiration
 
-The name **DraftWing** is a blend of two powerful ideas:
-- **"Draft"** → Automatically generates intelligent content drafts.
-- **"Wing"** → A subtle nod to [Flutter](https://flutter.dev), giving your content wings to fly!
+The name **DraftWing** comes from a combination of:
 
-Together, it symbolizes your AI-powered wingman for article creation 📝🕊️
+- **"Draft"** – Refers to generating article drafts.
+- **"Wing"** – A nod to Flutter, the framework powering this app.
+
+Together, they represent your creative wingman for article generation! 📝🕊️
 
 ![DraftWing Banner](assets/showcase/banner.png)
 
@@ -22,24 +24,22 @@ Together, it symbolizes your AI-powered wingman for article creation 📝🕊️
 
 ## 📲 Key Features
 
-DraftWing offers a seamless, intuitive, and elegant drafting experience:
+DraftWing provides a rich and streamlined drafting experience:
 
-- ✍️ **AI-Powered Draft Generation**: Generate complete drafts from minimal inputs using the power of Vertex AI.
-- 🔎 **Live Markdown Preview**: See your draft come alive in real-time markdown as you build it.
-- 📋 **Copy Content Easily**: Copy either raw markdown or rendered body for quick pasting into other platforms.
-- 💾 **Local Draft Storage**: Save your drafts locally with a simple tap and revisit anytime.
-- 🤖 **Agentic AI Flow**: The app smartly handles AI interactions with minimal disruptions or UI noise.
-- 🌗 **Dynamic Dark/Light Theme**: Fully responsive theming that adapts to your system preference for optimal comfort.
+- ✍️ **Generate AI Drafts**: Create article drafts using minimal input with the help of Vertex AI.
+- 🔎 **Live Markdown Preview**: View real-time markdown rendering as your draft is built.
+- 📋 **Copy Markdown**: Easily copy the complete markdown content or preview version.
+- 💾 **Save Locally**: Save drafts on your device for offline use or future reference.
+- 🤖 **Smooth AI Flow**: AI interaction is seamless, backgrounded, and non-intrusive.
+- 🌗 **Dynamic Theming**: Automatic support for light and dark modes based on system preference.
 
 ---
 
-## 🧠 AI System Prompt Overview
+## 🧠 System Prompt Customization
 
-DraftWing uses a tailored system prompt to guide AI responses, focused (by default) on **Flutter**-related content. You can easily modify the prompt to suit your domain.
+DraftWing uses a system prompt to instruct the AI. By default, it is optimized for **Flutter**-related articles but you can customize it to your needs.
 
-> You can find the full prompt in [`assets/prompt.md`](assets/prompt.md)
-
-Here’s a sample of the prompt context used:
+The current system prompt includes:
 
 ```
 
@@ -49,18 +49,20 @@ You are knowledgeable in:
 
 * Flutter and Dart
 * Firebase and its ecosystem
-* State management (e.g., BLoC, Riverpod, Provider, etc.)
+* State management (e.g., BLoC, Riverpod, Provider etc.)
 * Clean architecture patterns
 
 ````
 
-> ℹ️ Reference: [Flutter Gemini Codelab](https://codelabs.developers.google.com/codelabs/flutter-gemini-colorist#3)
+You can find and update this in the file: [`assets/prompt.md`](assets/prompt.md)
+
+Reference: [Google Codelab – Flutter + Gemini Colorist](https://codelabs.developers.google.com/codelabs/flutter-gemini-colorist#3)
 
 ---
 
 ## 🧑‍💻 Getting Started
 
-To run DraftWing locally, follow these simple steps:
+To run DraftWing locally:
 
 ### 🔁 Clone the Repository
 
@@ -83,9 +85,9 @@ flutter run
 
 ---
 
-## 🔧 Development Environment
+## 🧰 Development Environment
 
-This project is actively developed and tested using the following setup:
+The app has been developed and tested in the following environment:
 
 ```
 Doctor summary (to see all details, run flutter doctor -v):
@@ -97,32 +99,33 @@ Doctor summary (to see all details, run flutter doctor -v):
 [✓] VS Code (version 1.99.3)
 [✓] Connected device (5 available)
 [✓] Network resources
+
+• No issues found!
 ```
 
-> ✅ No issues found!
+---
+
+## 🔥 Firebase + Vertex AI Setup
+
+DraftWing uses Firebase to access Vertex AI. Setup is simple:
+
+1. **For Android**:
+
+   * Add your `google-services.json` file to `android/app/`
+
+2. **For iOS**:
+
+   * Add your `GoogleService-Info.plist` to `ios/Runner/`
+
+Firebase is already integrated, so no additional configuration is required.
+
+> ⚠️ **Important:** Do not upload your Firebase config files to public repositories. Vertex AI requires a Blaze Plan and may incur charges for usage.
 
 ---
 
-## 🔥 Firebase & Vertex AI Setup (IMPORTANT)
+## 👀 UI Showcase
 
-DraftWing integrates **Firebase** to use **Vertex AI**, which requires minimal setup from your end:
-
-### 🔐 Add Your Firebase Config Files
-
-For the app to run correctly with Firebase services:
-
-* Place `google-services.json` in `android/app/`
-* Place `GoogleService-Info.plist` in `ios/Runner/`
-
-All the necessary Firebase initialization and configuration is already handled in the codebase. Just drop in your config files and you're ready to go! 😇
-
-> ⚠️ **Important Note:** If you plan to make this project public, do **not** commit your Firebase configuration files. This app uses Vertex AI, which requires a **Blaze Plan** on Firebase and may incur usage costs.
-
----
-
-## 👁️ Visual Showcase
-
-Here’s a quick look at the app experience:
+A preview of DraftWing's interface:
 
 <p float="left">
   <img src="assets/showcase/splash.png" width="220">
@@ -137,20 +140,25 @@ Here’s a quick look at the app experience:
 
 ## 🧾 License
 
-This project is licensed under the MIT License.
-For more details, see the full [LICENSE](LICENSE.md) file.
+This project is licensed under the **MIT License**.
+See the [LICENSE](LICENSE.md) file for full license details.
 
 ---
 
-## 🙌 Acknowledgements
+## 🙏 Acknowledgements
 
-* Built with love using [Flutter](https://flutter.dev)
+* Built using [Flutter](https://flutter.dev)
 * Powered by [Google Vertex AI](https://cloud.google.com/vertex-ai)
-* Markdown rendering made easy via community packages
-* Inspired by the spirit of open-source innovation 💙
+* Open-source packages and community contributions
+* Inspired by the goal of empowering creators through accessible AI
 
 ---
 
-> Have feedback, improvements, or contributions? Feel free to fork and submit a PR. Let’s build better tools together 🚀
+> 💡 Have feedback or ideas? Contributions and PRs are welcome! Let’s improve DraftWing together.
 
+```
+
+---
+
+Let me know if you want this generated as a downloadable `.md` file or want to add badges, contribution guidelines, or Firebase setup images!
 ```
