@@ -52,7 +52,7 @@ To run DraftWing locally on your machine:
 ### 🔁 Clone the Repository
 
 ```bash
-git clone https://github.com/mhmzdev/draftwing.git
+git clone https://github.com/ShubhamKrishna0/draftwing.git
 cd draftwing
 ```
 
