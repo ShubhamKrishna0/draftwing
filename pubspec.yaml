@@ -1,0 +1,162 @@
+name: draftwing
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # firebase
+  firebase_core: ^4.0.0
+  firebase_vertexai: ^2.0.0
+  firebase_remote_config: ^6.0.0
+
+  # icons
+  cupertino_icons: 1.0.8
+  iconsax_flutter: ^1.0.1
+
+  # configs
+  intl: 0.20.2
+  color: 3.0.0
+  recase: 4.1.0
+  themed: 8.1.0
+  supercharged: 2.1.1
+  navigation_history_observer: 1.1.1 # routing
+
+  # forms
+  flutter_form_builder: ^10.1.0
+  form_builder_validators: ^11.0.0
+
+  # network
+  dio: ^5.8.0+1
+
+  # state mangament
+  provider: ^6.1.5
+  equatable: 2.0.7
+  flutter_bloc: 9.1.1
+
+  # models generation
+  json_annotation: 4.9.0
+  freezed_annotation: ^3.1.0
+  
+  # cache
+  hive: 2.2.3
+  hive_flutter: 1.1.0
+  path_provider: 2.1.5
+
+  # utils
+  uuid: 4.5.1
+  shimmer: 3.0.0
+  flash: ^3.1.1
+  markdown_widget: 2.3.2+8
+  package_info_plus: 8.3.0
+  connectivity_plus: ^6.1.4
+  flutter_keyboard_visibility: 6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^5.0.0
+
+  mockito: ^5.4.5
+  hive_test: 1.0.1
+  
+  freezed: ^3.0.0-0.0.dev
+  build_runner: ^2.5.4
+  hive_generator: 2.0.1
+  json_serializable: ^6.9.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: "ic_launcher"
+  adaptive_icon_background: "assets/app/app_icon.png"
+  adaptive_icon_foreground: "assets/app/app_icon.png"
+  ios: true
+  image_path: "assets/app/app_icon.png"
+  min_sdk_android: 21
+
+
+flutter_gen:
+  output: lib/gen/assets/ # Optional (default: lib/gen/)
+  line_length: 80 # Optional (default: 80)
+
+  # assets:
+  #   outputs:
+  #     package_parameter_enabled: true
+
+  # Optional
+  integrations:
+    # when using `flutter_svg` package
+    flutter_svg: true
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/
+    - assets/app/
+    - assets/misc/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/poppins/Poppins-Light.ttf
+          weight: 300
+        - asset: fonts/poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: fonts/poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: fonts/poppins/Poppins-Italic.ttf
+          style: italic
